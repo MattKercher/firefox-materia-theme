@@ -1,9 +1,6 @@
-<h1 align="center">
- Firefox Materia theme
-</h1>
+<h1 align="center">Firefox Materia Theme</h1>
 
-[![GitHub](https://img.shields.io/github/license/rafaelmardojai/firefox-gnome-theme.svg)](https://github.com/rafaelmardojai/firefox-gnome-theme/blob/master/LICENSE)
-[![Donate](https://img.shields.io/badge/PayPal-Donate-gray.svg?style=flat&logo=paypal&colorA=0071bb&logoColor=fff)](https://paypal.me/RafaelMardojaiCM)
+[![GitHub](https://img.shields.io/github/license/rafaelmardojai/firefox-gnome-theme.svg)](https://github.com/MattKercher/firefox-materia-theme/blob/master/LICENSE)
 
 <p align="center"><strong>A GNOME theme for Firefox</strong></p>
 
@@ -26,7 +23,7 @@ This theme is supposed to work with current supported Firefox releases:
 
 ### Installation script
 ```sh
-git clone https://github.com/rafaelmardojai/firefox-gnome-theme/ && cd firefox-gnome-theme
+git clone https://github.com/MattKercher/firefox-materia-theme && cd firefox-materia-theme
 ./scripts/install.sh
 ```
 
@@ -60,7 +57,7 @@ git clone https://github.com/rafaelmardojai/firefox-gnome-theme/ && cd firefox-g
 5. Clone this repo to a subdirectory:
 
 	```sh
-	git clone https://github.com/rafaelmardojai/firefox-gnome-theme.git
+	git clone https://github.com/MattKercher/firefox-materia-theme
 	```
 
 6. Create single-line user CSS files if non-existent or empty (at least one line is needed for `sed`):
@@ -72,13 +69,13 @@ git clone https://github.com/rafaelmardojai/firefox-gnome-theme/ && cd firefox-g
 7. Import this theme at the beginning of the CSS files (all `@import`s must come before any existing `@namespace` declarations):
 
 	```sh
-	sed -i '1s/^/@import "firefox-gnome-theme\/userChrome.css";\n/' userChrome.css
+	sed -i '1s/^/@import "firefox-materia-theme\/userChrome.css";\n/' userChrome.css
 	```
 
 8. Symlink preferences file:
 
 	```sh
-	ln -s chrome/firefox-gnome-theme/configuration/user.js ../user.js
+	ln -s chrome/firefox-materia-theme/configuration/user.js ../user.js
 	```
 
 9. Restart Firefox.
@@ -88,7 +85,7 @@ git clone https://github.com/rafaelmardojai/firefox-gnome-theme/ && cd firefox-g
 11. Be happy with your new gnomish Firefox.
 
 ## Updating
-Both manual and script installation methods should create a git clone in `your-profile-folder-path/chrome/firefox-gnome-theme`, so the easiet way to update the theme is to open this folder in terminal and perform a git pull.
+Both manual and script installation methods should create a git clone in `your-profile-folder-path/chrome/firefox-materia-theme`, so the easiet way to update the theme is to open this folder in terminal and perform a git pull.
 
 ```sh
 git pull origin master
@@ -104,7 +101,7 @@ git pull origin master
 To achieve Firefox with overlay scrollbars install [firefox-gnome-scrollbars](https://github.com/rafaelmardojai/firefox-gnome-scrollbars).
 
 ## Enabling optional features
-Open `chrome/firefox-gnome-theme/userChrome.css` with a text editor and follow instructions to enable extra features. Keep in mind this file might change in future versions and your configuration will be lost. You can copy the @imports you want to enable to a new file named `customChrome.css` directly in your `chrome/firefox-gnome-theme` directory if you want it to survive updates. Remember all @imports must be at the top of the file, before other statements.
+Open `chrome/firefox-materia-theme/userChrome.css` with a text editor and follow instructions to enable extra features. Keep in mind this file might change in future versions and your configuration will be lost. You can copy the @imports you want to enable to a new file named `customChrome.css` directly in your `chrome/firefox-materia-theme` directory if you want it to survive updates. Remember all @imports must be at the top of the file, before other statements.
 
 Alternatively you can run installation script with `-g` flag to auto install GNOMISH features.
 
@@ -186,7 +183,9 @@ Feel free to use any parts of my code to develop your own themes, I don't force
 any specific license on your code.
 
 ## Credits
+Theme modifications by **[Matthew Kercher](https://github.com/MattKercher)**
+
 Developed by **[Rafael Mardojai CM](https://github.com/rafaelmardojai)** and [contributors](https://github.com/rafaelmardojai/firefox-gnome-theme/graphs/contributors). Based on **[Sai Kurogetsu](https://github.com/kurogetsusai/firefox-gnome-theme)** original work.
 
 ## Donate
-If you want to support development, consider donating via [PayPal](https://paypal.me/RafaelMardojaiCM). Also consider donating upstream, [Firefox](https://donate.mozilla.org/) & [GNOME](https://www.gnome.org/support-gnome/).
+If you want to support development, consider donating to the original author via [PayPal](https://paypal.me/RafaelMardojaiCM). Also consider donating upstream, [Firefox](https://donate.mozilla.org/) & [GNOME](https://www.gnome.org/support-gnome/).
