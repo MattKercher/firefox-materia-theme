@@ -1,6 +1,5 @@
 <h1 align="center">
-	<img src="icon.svg" alt="Firefox GNOME theme" width="100" height="100"/><br>
- Firefox GNOME theme
+ Firefox Materia theme
 </h1>
 
 [![GitHub](https://img.shields.io/github/license/rafaelmardojai/firefox-gnome-theme.svg)](https://github.com/rafaelmardojai/firefox-gnome-theme/blob/master/LICENSE)
@@ -8,13 +7,13 @@
 
 <p align="center"><strong>A GNOME theme for Firefox</strong></p>
 
-<p align="center">This theme follows lastest GNOME Adwaita style.</p>
+<p align="center">This theme follows lastest Materia GTK+ Theme style.</p>
 
-![Screenshot of the theme](screenshot.png)
+<!--![Screenshot of the theme](screenshot.png)-->
 
 ## Description
 
-This is a bunch of CSS code to make Firefox look closer to GNOME's native apps.
+This is a **work in progress** fork of the **[Firefox GNOME Theme](https://github.com/rafaelmardojai/firefox-gnome-theme)** developed by **[Rafael Mardojai CM](https://github.com/rafaelmardojai)**. This project is a bunch of CSS code to make Firefox look closer to the **[Materia GTK+ theme](https://github.com/nana-4/materia-theme)**.
 
 This theme is supposed to work with current supported Firefox releases:
 
