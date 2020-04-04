@@ -2,6 +2,14 @@
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+/* URLbar styling
+#urlbar:not(.megabar){
+	background-color: #d7d7d7 !important;
+	border-radius: 5px 5px 0 0 !important;
+	border: none !important;
+	border-bottom: 1px solid #9f9f9f !important;
+} */
+
 /* Entries */
 #urlbar.megabar #urlbar-input-container,
 #urlbar:not(.megabar),
@@ -10,8 +18,9 @@
 .findbar-textbox {
 	-moz-appearance: none !important;
 	background: var(--gnome-entry-background) !important;
-	border: 1px solid var(--gnome-entry-border-color) !important;
-	border-radius: 5px !important;
+	border: none !important;
+	border-bottom: 1px solid var(--gnome-entry-border-color) !important;
+	border-radius: 5px 5px 0 0 !important;
 	box-shadow: var(--gnome-entry-box-shadow) !important;
 	color: var(--gnome-entry-color) !important;
 	height: 34px !important;
@@ -32,9 +41,9 @@
 #search-box[focused], 
 .findbar-textbox[focused],
 .findbar-textbox:focus {
-	outline: 2px solid var(--gnome-focused-urlbar-border-color) !important;
-	outline-offset: -2px;
-	-moz-outline-radius: 5px;
+	border: none !important;
+	border-top: 1px solid transparent !important;
+	border-bottom: 2px solid var(--gnome-focused-urlbar-border-color) !important;
 }
 
 /* Inactive window entries */
@@ -51,8 +60,8 @@
 
 /* Entries combined */
 .findbar-textbox:not(.minimal) {
-	border-top-right-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
+	margin-right: 10px !important;
+	margin-left: 10px !important;
 	border-right-width: 0 !important;
 }
 .findbar-textbox:not(.minimal)[focused], .findbar-textbox:not(.minimal):focus {

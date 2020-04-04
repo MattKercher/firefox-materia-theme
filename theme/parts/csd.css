@@ -32,6 +32,20 @@
 	}
 }
 
+/* Right window buttons */
+@media not (-moz-gtk-csd-reversed-placement) {
+	/* Window buttons box */
+	/* Add separator */
+	:root[tabsintitlebar] #titlebar .titlebar-buttonbox-container:before {
+		content: '';
+		width: 1px;
+		height: calc(100% - 20px);
+		background: var(--gnome-csd-border-color);
+		position: absolute;
+		bottom: 10px;
+	}
+}
+
 /* Left window buttons */
 @media (-moz-gtk-csd-reversed-placement) {
 	:root[tabsintitlebar]:not([inFullscreen]) #nav-bar {
@@ -42,6 +56,16 @@
 	:root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
 		left: 0;
 		right: auto !important;
+	}
+	/* Add separator */
+	:root[tabsintitlebar] #titlebar .titlebar-buttonbox-container:after {
+		content: '';
+		width: 1px;
+		height: calc(100% - 20px);
+		background: var(--gnome-csd-border-color);
+		position: absolute;
+		bottom: 10px;
+		right: 0;
 	}
 
 	/* Window controls: at least 1 button */
@@ -151,7 +175,7 @@
 }
 :root[tabsintitlebar] #titlebar:not(:-moz-window-inactive) .titlebar-button:not([disabled]):hover,
 :root[tabsintitlebar][inFullscreen] #window-controls:not(:-moz-window-inactive) toolbarbutton:not([disabled]):hover {
-	background-image: var(--gnome-button-hover-background);
+	background-color: var(--gnome-button-hover-background) !important;
 	border-color: var(--gnome-button-border-color) !important;
 	border-bottom-color: var(--gnome-button-border-accent-color) !important;
 	box-shadow: var(--gnome-button-box-shadow);

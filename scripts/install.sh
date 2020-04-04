@@ -42,19 +42,19 @@ cp -R $THEMEDIRECTORY $PWD
 [[ -s userChrome.css ]] || echo >> userChrome.css
 
 # Import this theme at the beginning of the CSS files.
-sed -i '1s/^/@import "firefox-gnome-theme\/userChrome.css";\n/' userChrome.css
+sed -i '1s/^/@import "firefox-materia-theme\/userChrome.css";\n/' userChrome.css
 
 # If GNOMISH extras enabled, import it in customChrome.css.
 if [ "$GNOMISHEXTRAS" = true ] ; then
 	echo "Enabling GNOMISH extra features"
-	[[ -s customChrome.css ]] || echo >> firefox-gnome-theme/customChrome.css
-	sed -i '1s/^/@import "theme\/hide-single-tab.css";\n/' firefox-gnome-theme/customChrome.css
-	sed -i '2s/^/@import "theme\/matching-autocomplete-width.css";\n/' firefox-gnome-theme/customChrome.css
-	sed -i '3s/^/@import "theme\/rounded-title-buttons.css";\n/' firefox-gnome-theme/customChrome.css
+	[[ -s customChrome.css ]] || echo >> firefox-materia-theme/customChrome.css
+	sed -i '1s/^/@import "theme\/hide-single-tab.css";\n/' firefox-materia-theme/customChrome.css
+	sed -i '2s/^/@import "theme\/matching-autocomplete-width.css";\n/' firefox-materia-theme/customChrome.css
+	sed -i '3s/^/@import "theme\/rounded-title-buttons.css";\n/' firefox-materia-theme/customChrome.css
 fi
 
-# Symlink user.js to firefox-gnome-theme one.
+# Symlink user.js to firefox-materia-theme one.
 echo "Set configuration user.js file"
-ln -s chrome/firefox-gnome-theme/configuration/user.js ../user.js
+ln -s chrome/firefox-materia-theme/configuration/user.js ../user.js
 
 echo "Done."

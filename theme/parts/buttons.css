@@ -39,9 +39,9 @@
 	-moz-appearance: none !important;
 	background: var(--gnome-button-background) !important;
 	box-shadow: var(--gnome-button-box-shadow) !important;
-	border: 1px solid var(--gnome-button-border-color) !important;
+	border: 0px solid var(--gnome-button-border-color) !important;
 	border-bottom-color: var(--gnome-button-border-accent-color) !important;
-	border-radius: 5px !important;
+	border-radius: 50px !important;
 	padding: 0 2px !important;
 	height: 34px !important;
 	max-height: 34px !important;
@@ -167,10 +167,12 @@ menulist[open] .menulist-label-box,
 .dialog-button:active {
 	background: var(--gnome-button-active-background) !important;
 	box-shadow: var(--gnome-button-active-box-shadow) !important;
-	border-color: var(--gnome-button-active-border-color) !important;
+	overflow: visible !important;
+	/* border-color: var(--gnome-button-active-border-color) !important;
 	border-bottom-color: var(--gnome-button-active-border-color) !important;
-	border-top-color: var(--gnome-button-active-border-accent-color) !important;
+	border-top-color: var(--gnome-button-active-border-accent-color) !important; */
 }
+
 
 /* Disabled buttons */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button)[disabled],
@@ -238,10 +240,9 @@ menulist[open] .menulist-label-box,
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-button:not(:last-of-type) {
-	border-top-right-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
 	border-right-width: 0 !important;
-	margin-right: 0 !important;
+	margin-right: 5px !important;
+	margin-left: 10px !important;
 }
 
 #nav-bar .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#hack),
@@ -253,8 +254,6 @@ menulist[open] .menulist-label-box,
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-container toolbarbutton.findbar-find-next,
 .findbar-button:not(:first-of-type) {
-	border-top-left-radius: 0 !important;
-	border-bottom-left-radius: 0 !important;
 	margin-left: 0 !important;
 }
 

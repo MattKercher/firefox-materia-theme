@@ -5,7 +5,7 @@
 
 /* Headerbar */
 #nav-bar {
-	padding: 6px 3px !important;
+	padding: 7px 3px !important;
 }
 
 /* Headerbar CSD colors */
@@ -17,6 +17,6 @@
 }
 :root[tabsintitlebar] #nav-bar:-moz-window-inactive {
 	background: var(--gnome-inactive-headerbar-background) !important;
-	border-bottom-color: var(--gnome-inactive-headerbar-border-color) !important;
+	border-bottom: 1px solid var(--gnome-inactive-headerbar-border-color) !important;
 	box-shadow: var(--gnome-inactive-headerbar-box-shadow) !important;
 }

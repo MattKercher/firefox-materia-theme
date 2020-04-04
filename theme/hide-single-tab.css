@@ -4,4 +4,7 @@
 	display: none !important;
 }
 
-/* TODO: Hidde tabbar bottom border */
+/* Hide tabbar bottom border */
+#nav-bar{
+	margin-bottom: -1px !important;
+}
